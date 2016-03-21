@@ -1,0 +1,23 @@
+{
+  "name": "directives-fundamentals",
+  "homepage": "http://www.bpaulino.com.br/angular-directives-fundamentals",
+  "authors": [
+    "Bruno Paulino <brunojppb@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.2",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2"
+  }
+}
