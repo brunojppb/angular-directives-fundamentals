@@ -3,7 +3,7 @@
   var app = angular.module('app', []);
 
   app.controller('mainCtrl', ['$scope', function($scope) {
-    $scope.size = 150;
+    $scope.size = 500;
   }]);
 
   app.directive('fontScale', function() {
