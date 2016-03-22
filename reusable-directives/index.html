@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Directives Fundamentals</title>
+  </head>
+
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="../style/style.css" media="screen" title="no title" charset="utf-8">
+
+  <script src="../bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="../bower_components/angular/angular.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+
+  <body ng-controller="mainCtrl">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Angular Custom Directives</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+              <user-info-card user="user1">
+              </user-info-card>
+              <user-info-card user="user2">
+              </user-info-card>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

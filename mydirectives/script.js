@@ -59,8 +59,67 @@
             };
 
             console.log($scope);
+
+            $scope.removeFriend = function(friend) {
+              var index = $scope.user.friends.indexOf(friend);
+              if(index > -1) {
+                $scope.user.friends.splice(index, 1);
+              }
+            }
           }
         };
       });
+
+    angular
+      .module('app')
+      .directive('address', function(){
+        return {
+          restrict: 'E',
+          scope: true,
+          templateUrl: 'address.html',
+          controller: function($scope, $log) {
+            $scope.collapsed = false;
+            $scope.colapseAddress = function() {
+              $scope.collapsed = !$scope.collapsed;
+            };
+          }
+        }
+      });
+
+    angular
+      .module('app')
+      .directive('removeFriend', function() {
+        return {
+          restrict: 'E',
+          scope: {
+            notifyParent: '&method'
+          },
+          templateUrl: 'removeFriend.html',
+          controller: function($scope) {
+            $scope.removing = false;
+
+            $scope.startRemove = function() {
+              $scope.removing = true;
+            }
+
+            $scope.cancelRemove = function() {
+              $scope.removing = false;
+            }
+
+            $scope.confirmRemove = function() {
+              $scope.notifyParent();
+            }
+
+          }
+        };
+      })
+
+
+
+
+
+
+
+
 
 }());

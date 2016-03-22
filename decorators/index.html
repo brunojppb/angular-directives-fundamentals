@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="decorators">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Directives Fundamentals - Decorators</title>
+  </head>
+
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="../style/style.css" media="screen" title="no title" charset="utf-8">
+
+  <script src="../bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="../bower_components/angular/angular.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+
+  <body ng-controller="videoCtrl">
+    <h1>Decorators</h1>
+
+    <div class="container">
+      <div class="col-xs-12">
+        <video id="vid" spacebar-support event-pause="handlePause()" controls preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png">
+          <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4"></source>
+          <source src="http://media.w3.org/2010/05/sintel/trailer.webm5" type="video/webm"></source>
+          <source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg"></source>
+        </video>
+      </div>
+      <div class="col-xs-12">
+        <h4>Events</h4>
+        <ul>
+          <li ng-repeat="message in messages">{{message.text}}</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

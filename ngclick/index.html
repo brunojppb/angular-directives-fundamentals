@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Directives Fundamentals - TEMPLATE</title>
+  </head>
+
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="../style/style.css" media="screen" title="no title" charset="utf-8">
+
+  <script src="../bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="../bower_components/angular/angular.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+
+  <body ng-controller="mainCtrl" my-click="clickHandler(data)">
+    <h1>NG-CLICK Like</h1>
+
+    <div class="container">
+      <div class="col-xs-12">
+        {{data.message}}
+      </div>
+    </div>
+  </body>
+</html>
