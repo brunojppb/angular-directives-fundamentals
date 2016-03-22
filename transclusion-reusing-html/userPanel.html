@@ -1,0 +1,11 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <button ng-click="nextState()" class="btn btn-info btn-xs" style="float: right">Next State</button>
+    <span state-display="level user-ok user-warning user-problem user-error">
+      {{ name }}
+    </span>
+  </div>
+
+  <div class="panel-body" ng-transclude>
+  </div>
+</div>

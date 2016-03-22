@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Directives Fundamentals - TEMPLATE</title>
+  </head>
+
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="../style/style.css" media="screen" title="no title" charset="utf-8">
+
+  <script src="../bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="../bower_components/angular/angular.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+
+  <body ng-controller="mainCtrl">
+    <h1>Transclusion</h1>
+
+    <div class="container">
+      <div class="col-xs-12">
+
+        <display-box>
+          <div>
+            This the content passed-in to the ng-transclude directive in my display-box directive
+          </div>
+          <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+          </ul>
+          <div>
+            {{message}}
+          </div>
+        </display-box>
+
+      </div>
+    </div>
+  </body>
+</html>
